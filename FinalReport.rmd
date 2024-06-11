@@ -48,6 +48,12 @@ The first graph shows the frequency of how many people get aids from taking the 
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+```{r}
+table1 <- xtabs(~infected + treatment, data=DrugUser)
+rowPerc(table1)
+colPerc(table1)
+```
+Out of the infected people listed in the Numerical description, the people who used placebo are three times more likely to get aids then the people who take the drug.  
 
 ## Inferential Results
 
